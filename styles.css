@@ -1,0 +1,246 @@
+/* principal */
+body {
+    background: url(https://static-assets.bamgrid.com/product/disneyplus/images/background.dc67869b698f6c927aae59c68d9dda46.png) 50%/cover no-repeat fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav.str {
+    position: fixed;
+}
+
+h1 {
+    color: yellow;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    padding-top: -10px;
+}
+
+h5 {
+    color: white;
+    margin-left: 15px;
+    margin-top: 10px;
+    padding-bottom: 0;
+}
+
+header {
+    background: transparent;
+    text-align: center;
+}
+
+ul {
+    display: flex;
+    justify-content: left;/* aliniare obiecte , si merge in combinatie cu  display: flex; */
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    align-items: center;
+}
+
+li {
+    display: flex;
+    padding: 10px;
+    border-radius: 3px;
+    margin-right: 10px;
+    transition: 0.5s all;
+    align-items: center;
+}
+
+.nume {
+    margin-left: auto;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.logo img {
+    height: 35px;
+    width: 80px;
+}
+
+.nav-icon {
+    margin-right: 5px;
+    font-size: 12px;
+    align-items: center;
+}
+
+figure.f-prim {
+    background-image: url("imagini/00.png");
+    position: relative;
+    background-size: cover;
+    width: 900px;
+    padding-top: 100px;
+    gap: 100px;
+    height: 100px;
+    margin: 20px;
+    margin-top: 5px;
+    justify-content: center;
+}
+
+figure.f-prim img {
+    width: 4000px;
+}
+
+.f-sec {
+    display: flex;
+    gap: 1px;
+}
+
+figure.f-a {
+    background-color: rgb(22, 22, 65);
+    height: 60px;
+    margin: 1px;
+    flex: 1;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 7px;
+}
+
+.f-tr {
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+figure.f-b {
+    height: 100px;
+    margin: 1px;
+    flex: 1;
+    margin-right: 5px;
+}
+
+.f-fr {
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+figure.f-c {
+    background-color: green;
+    height: 250px;
+    margin: 1px;
+    flex: 1;
+    margin-right: 5px;
+}
+
+img {
+    width: 181px;
+}
+
+.f-a img {
+    display: flex;
+    width: 110px;
+}
+
+/*originals*/
+
+figure.f-originals {
+    position: relative;
+    background-size: cover;
+    width: 800px;
+    padding-top: 100px;
+    height: 20px;
+    margin: 0px;
+    margin-top: 0px;
+    justify-content: center;
+}
+
+figure.f-originals h2 {
+    color: white;
+    margin-left: 200px;
+    margin-top: -70px;
+}
+
+/*starwars*/
+header.starwars {
+    display: flex;
+}
+
+figure.f-star {
+    position: relative;
+    background-size: cover;
+    width: 50px;
+    padding-top: 500px;
+    height: 20px;
+    margin: 0px;
+    margin-top: 0px;
+    justify-content: center;
+}
+
+body.starwarsv {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("imagini/starwars/f00.jfif");
+    height: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+/*Marvel*/
+header.mar {
+    display: flex;
+}
+
+figure.f-marv {
+    position: relative;
+    background-size: cover;
+    width: 50px;
+    padding-top: 500px;
+    height: 20px;
+    margin: 0px;
+    margin-top: 0px;
+    justify-content: center;
+}
+
+body.marvel {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("imagini/marvel.jfif");
+    height: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+/*Disney*/
+header.disn {
+    display: flex;
+}
+
+figure.f-disn {
+    position: relative;
+    background-size: cover;
+    width: 50px;
+    padding-top: 500px;
+    height: 20px;
+    margin: 0px;
+    margin-top: 0px;
+    justify-content: center;
+}
+
+body.dis {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("imagini/disney.jfif");
+    height: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}

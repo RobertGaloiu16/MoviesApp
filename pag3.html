@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Aplicatie</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/085bf204bd.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+        integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+</head>
+
+<body class="marvel">
+  <header class="mar">
+    <nav class="str">
+      <ul>
+        <li class="logo"><a href="index.html"><img src="imagini/disneylogo.svg" alt="logo"></a></li>
+        <li><a href="index.html"> <i class="fa-solid fa-house nav-icon"></i>Acasa</a></li>
+        <li><a href=""><i class="fa-solid fa-magnifying-glass nav-icon"></i>Cautare</a></li>
+        <li><a href=""><i class="fa-solid fa-plus nav-icon"></i>Lista Mea</a></li>
+        <li><a href="pag1.html"><i class="fa-solid fa-star nav-icon"></i>Originals</a></li>
+        <li><a href=""><i class="fa-solid fa-tape nav-icon"></i>Filme</a></li>
+        <li><a href=""><i class="fa-solid fa-tv nav-icon"></i>Seriele</a></li>
+        <li class="nume"><a href=""><i class="fa-solid fa-user"></i>Robert</a></li>
+
+      </ul>
+    </nav>
+    <section>
+      <figure class="f-marv"></figure>
+    </section>
+  </header>
+  <h5 class="aaa">Colecti Iron Man</h5>
+  <h5 class="bbb">Colecti cu eroi</h5>
+  <h5 class="ccc">Infiniti saga </h5>
+  <h5 class="ddd">Seriale</h5>
+  <h5 class="eee">Desene</h5>
+  <script>
+    $(document).ready(function () {//cand e gata html 
+        let imagini = "imagini/index/marvel/";
+        let categorii = ['aaa', 'bbb', 'ccc','ddd','eee'];
+        categorii.forEach(categorie => {
+            let section = ' <section class="f-tr ' + categorie + ' "></section> ';
+            $("h5." + categorie).after(section);//selecteaza h5. adauga imediat dupa
+
+            let calea = imagini + '/' + categorie + '/';//calea pt imagini
+
+            for (let index = 1; index <= 5; index++) {
+                $('section.f-tr.' + categorie).append('<figure class="f-b"><img src="' + calea + index + '.jfif" alt="' + index + '"></figure>');//in interior 
+            }
+        });
+    });
+</script>
+</body>
+
+</html>

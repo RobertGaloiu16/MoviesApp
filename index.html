@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aplicatie</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/085bf204bd.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+        integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="logo"><a href="index.html"><img src="imagini/disneylogo.svg" alt="logo"></a></li>
+                <li><a href="index.html"> <i class="fa-solid fa-house nav-icon"></i>Acasa</a></li>
+                <li><a href=""><i class="fa-solid fa-magnifying-glass nav-icon"></i>Cautare</a></li>
+                <li><a href=""><i class="fa-solid fa-plus nav-icon"></i>Lista Mea</a></li>
+                <li><a href="pag1.html"><i class="fa-solid fa-star nav-icon"></i>Originals</a></li>
+                <li><a href=""><i class="fa-solid fa-tape nav-icon"></i>Filme</a></li>
+                <li><a href=""><i class="fa-solid fa-tv nav-icon"></i>Seriele</a></li>
+                <li class="nume"><a href=""><i class="fa-solid fa-user"></i>Robert</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <figure class="f-prim"></figure>
+    </section>
+    <section class="f-sec">
+        <a href="pag4.html">
+        <figure class="f-a">
+            <img src="imagini/l0.png" alt="l0">
+        </figure>
+    </a>
+        <figure class="f-a">
+            <img src="imagini/l1.png" alt="l1">
+        </figure>
+        <a href="pag3.html">
+        <figure class="f-a">
+            <img src="imagini/l2.png" alt="l2">
+        </figure>
+        </a>
+        <a href="pag2.html">
+            <figure class="f-a">
+                <img src="imagini/l3.png" alt="l3">
+            </figure>
+        </a>
+        <figure class="f-a">
+            <img src="imagini/l4.png" alt="l4">
+        </figure>
+        <figure class="f-a">
+            <img src="imagini/l5.png" alt="l5">
+        </figure>
+    </section>
+    <h5 class="sf">SF</h5>
+    <h5 class="new">Nou pe disney</h5>
+    <h5>Seriale dramatice</h5>
+    <section class="f-fr">
+        <figure class="f-c"><img src="imagini/20.jfif" alt="20"></figure>
+        <figure class="f-c"><img src="imagini/21.jfif" alt="21"></figure>
+        <figure class="f-c"><img src="imagini/22.jfif" alt="22"></figure>
+        <figure class="f-c"><img src="imagini/23.jfif" alt="23"></figure>
+        <figure class="f-c"><img src="imagini/24.jfif" alt="24"></figure>
+    </section>
+    <h5 class="rec">Contiuna vizionarea</h5>
+    <h5>Ce sa vezi diseara </h5>
+    <section class="f-tr">
+        <figure class="f-b"><img src="imagini/30.jfif" alt="30"></figure>
+        <figure class="f-b"><img src="imagini/31.jfif" alt="31"></figure>
+        <figure class="f-b"><img src="imagini/32.jfif" alt="32"></figure>
+        <figure class="f-b"><img src="imagini/33.jfif" alt="33"></figure>
+        <figure class="f-b"><img src="imagini/34.jfif" alt="34"></figure>
+    </section>
+    <h5>Recomandate pentru tine</h5>
+    <section class="f-tr">
+        <figure class="f-b"><img src="imagini/40.jfif" alt="40"></figure>
+        <figure class="f-b"><img src="imagini/41.jfif" alt="41"></figure>
+        <figure class="f-b"><img src="imagini/42.jfif" alt="42"></figure>
+        <figure class="f-b"><img src="imagini/43.jfif" alt="43"></figure>
+        <figure class="f-b"><img src="imagini/44.jfif" alt="44"></figure>
+    </section>
+    <h5>Filme si seriale Razboiul stelelor</h5>
+    <section class="f-tr">
+        <figure class="f-b"><img src="imagini/50.jfif" alt="50"></figure>
+        <figure class="f-b"><img src="imagini/51.jfif" alt="51"></figure>
+        <figure class="f-b"><img src="imagini/52.jfif" alt="52"></figure>
+        <figure class="f-b"><img src="imagini/53.jfif" alt="53"></figure>
+        <figure class="f-b"><img src="imagini/54.jfif" alt="54"></figure>
+    </section>
+    <h5>Populare</h5>
+    <section class="f-tr">
+        <figure class="f-b"><img src="imagini/60.jfif" alt="60"></figure>
+        <figure class="f-b"><img src="imagini/61.jfif" alt="61"></figure>
+        <figure class="f-b"><img src="imagini/62.jfif" alt="62"></figure>
+        <figure class="f-b"><img src="imagini/63.jfif" alt="63"></figure>
+        <figure class="f-b"><img src="imagini/64.jfif" alt="64"></figure>
+    </section>
+    <script>
+        $(document).ready(function () {//cand e gata html 
+            let imagini = "imagini/index/";
+            let categorii = ['sf', 'new', 'rec'];
+            categorii.forEach(categorie => {
+                let section = ' <section class="f-tr ' + categorie + ' "></section> ';
+                $("h5." + categorie).after(section);//selecteaza h5. adauga imediat dupa
+
+                let calea = imagini + '/' + categorie + '/';//calea pt imagini
+
+                for (let index = 1; index <= 5; index++) {
+                    $('section.f-tr.' + categorie).append('<figure class="f-b"><img src="' + calea + index + '.jfif" alt="' + index + '"></figure>');//in interior 
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
